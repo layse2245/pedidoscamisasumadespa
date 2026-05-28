@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        UMADESPA 2026
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            UMADESPA 2026
+        </div>
+
+        <nav>
+
+            <a href="#camisa">
+                Camisa
+            </a>
+
+            <a href="#pedidos">
+                Pedidos
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <section class="hero" id="camisa">
+
+            <div class="hero-texto">
+
+                <span class="tag">
+                    CONGRESSO OFICIAL
+                </span>
+
+                <h1>
+                    Camisa Oficial
+                    UMADESPA 2026
+                </h1>
+
+                <p>
+                    Sistema oficial para cadastro
+                    dos pedidos da camisa do congresso.
+                </p>
+
+                <div class="hero-preco">
+                    R$ 39,00
+                </div>
+
+            </div>
+
+            <div class="hero-img">
+
+                <img
+                    src="imagem/camisa.jpg"
+                    alt="Camisa Oficial"
+                >
+
+            </div>
+
+        </section>
+
+        <!-- CARDS -->
+        <section class="cards">
+
+            <div class="card">
+
+                <span>
+                    Total de Pedidos
+                </span>
+
+                <h2 id="totalPedidos">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>
+                    Valor Total
+                </span>
+
+                <h2 id="totalValor">
+                    R$ 0
+                </h2>
+
+            </div>
+
+            <div class="card laranja">
+
+                <span>
+                    Pedidos Confirmados
+                </span>
+
+                <h2 id="confirmados">
+                    0
+                </h2>
+
+            </div>
+
+        </section>
+
+        <!-- FORM -->
+        <section class="form-section">
+
+            <h2>
+                Cadastro de Pedido
+            </h2>
+
+            <form id="pedidoForm">
+
+                <!-- GRID -->
+                <div class="grid">
+
+                    <!-- NOME -->
+                    <div class="input-box">
+
+                        <label>
+                            Nome do Responsável
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- CAMPO -->
+                    <div class="input-box">
+
+                        <label>
+                            Campo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="campo"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- SUPERVISÃO -->
+                    <div class="input-box">
+
+                        <label>
+                            Supervisão
+                        </label>
+
+                        <input
+                            type="text"
+                            id="supervisao"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- WHATSAPP -->
+                    <div class="input-box">
+
+                        <label>
+                            WhatsApp
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="whatsapp"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- CONFIRMAÇÃO -->
+                <div class="input-box">
+
+                    <label>
+                        Confirma que o pedido será
+                        finalizado até 15/06/2026?
+                    </label>
+
+                    <select
+                        id="confirmacao"
+                        required
+                    >
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option value="Sim">
+                            Sim
+                        </option>
+
+                        <option value="Não">
+                            Não
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- FEMININO -->
+                <div class="tamanhos-box">
+
+                    <h3>
+                        Tamanhos Femininos
+                    </h3>
+
+                    <div class="grid-tamanhos">
+
+                        <div class="input-box">
+
+                            <label>
+                                PP Feminino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="ppf"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                P Feminino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="pf"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                M Feminino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="mf"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                G Feminino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="gf"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                GG Feminino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="ggf"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- MASCULINO -->
+                <div class="tamanhos-box">
+
+                    <h3>
+                        Tamanhos Masculinos
+                    </h3>
+
+                    <div class="grid-tamanhos">
+
+                        <div class="input-box">
+
+                            <label>
+                                PP Masculino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="ppm"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                P Masculino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="pm"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                M Masculino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="mm"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                G Masculino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="gm"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <label>
+                                GG Masculino
+                            </label>
+
+                            <input
+                                type="number"
+                                id="ggm"
+                                value="0"
+                                min="0"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RETIRADA -->
+                <div class="input-box">
+
+                    <label>
+                        Como e quando pretende retirar?
+                    </label>
+
+                    <textarea
+                        id="retirada"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <!-- PIX -->
+                <div class="pix-box">
+
+                    <h3>
+                        Pagamento PIX
+                    </h3>
+
+                    <p>
+                        I M R VILARINS CONFECCAO
+                        DE PECAS DO VESTUARIO LTDA
+                    </p>
+
+                    <strong>
+                        CHAVE PIX:
+                    </strong>
+
+                    <span>
+                        9198275-8432
+                    </span>
+
+                </div>
+
+                <!-- COMPROVANTE -->
+                <div class="input-box">
+
+                    <label>
+                        Anexar comprovante PIX
+                    </label>
+
+                    <input
+                        type="file"
+                        id="comprovante"
+                    >
+
+                </div>
+
+                <!-- TOTAL -->
+                <div class="total-box">
+
+                    <h3>
+
+                        Total de Camisas:
+
+                        <span id="totalCamisas">
+                            0
+                        </span>
+
+                    </h3>
+
+                    <h2>
+
+                        Valor Total:
+
+                        <span id="valorTotal">
+                            R$ 0,00
+                        </span>
+
+                    </h2>
+
+                </div>
+
+                <!-- BOTÃO -->
+                <button type="submit">
+
+                    Finalizar Pedido
+
+                </button>
+
+                <!-- MENSAGEM -->
+                <div id="mensagem"></div>
+
+            </form>
+
+        </section>
+
+        <!-- PEDIDOS -->
+        <section
+            class="tabela-section"
+            id="pedidos"
+        >
+
+            <div class="top-table">
+
+                <h2>
+                    Pedidos Cadastrados
+                </h2>
+
+            </div>
+
+            <div class="table-area">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Responsável
+                            </th>
+
+                            <th>
+                                Campo
+                            </th>
+
+                            <th>
+                                Supervisão
+                            </th>
+
+                            <th>
+                                WhatsApp
+                            </th>
+
+                            <th>
+                                Total
+                            </th>
+
+                            <th>
+                                Valor
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="listaPedidos">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
